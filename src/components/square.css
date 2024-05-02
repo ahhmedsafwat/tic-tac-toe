@@ -1,0 +1,7 @@
+button:not(:nth-child(3n)) {
+  @apply border-r-current;
+}
+
+button:not(:nth-last-child(-n + 3)) {
+  @apply border-b-current;
+}
