@@ -13,11 +13,11 @@ const Game = () => {
     setCurrentMove(nextHistory.length - 1);
   }
 
-  function jumpTo(nextMove) {
+  function jumpTo(nextMove: number): void {
     setCurrentMove(nextMove);
   }
 
-  const moves = history.map((squares, move) => {
+  const moves = history.map((_, move) => {
     let description;
     if (move > 0) {
       description = `Go to Move ${move}`;
